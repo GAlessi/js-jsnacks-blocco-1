@@ -19,7 +19,7 @@
              fullnames.push(names[rndName] + " " + lastnames[rndLastname])
             }
 
-            console.log("Lista nomi e cognomi casuali:" + " " + fullnames);
+            console.log("Esercizio 1: ", fullnames);
 
 // Crea due array che hanno un numero di elementi diversi. Aggiungi elementi all'array che ha meno elementi fino a quando ne avrà tanti quanti l'altro.
             var numbers1 = [ 1, 5, 18, 25 ];
@@ -40,7 +40,18 @@
                 var numberRnd = Math.floor(Math.random() * 100) + 1;
                 short.push(numberRnd);
             }
-            console.log(short, long);
+            console.log("Esercizio 2: ", short, long);
+
+// Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori  finche' la somma non supera il valore limite e stampare i valori forniti dall'utente
+            var arr = [];
+            var numeroMax = parseInt(prompt("Inserisci il Valore Limite"));
+            var somma = 0
+            while (somma < numeroMax) {
+                var numeroUtente = parseInt(prompt("Inserisci un numero minore di " + numeroMax));
+                arr.push(numeroUtente);
+                somma = somma + numeroUtente;
+            }
+            console.log("Esercizio 3: ", "Numero limite: " + numeroMax,  arr, "totale: " + somma);
         </script>
 
     </body>
