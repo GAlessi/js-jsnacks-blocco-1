@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>JSnacks</title>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+
+// Generatore di "nomi cognomi" casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
+            var names = ['Michele', 'Fabio', 'Roberto'];
+            var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
+            var fullnames = [];
+
+            for (var i = 0; i < 5; i++) {
+             var rndName = Math.floor(Math.random() * names.length);
+             var rndLastname = Math.floor(Math.random() * lastnames.length);
+             fullnames.push(names[rndName] + " " + lastnames[rndLastname])
+            }
+
+            console.log(fullnames);
+
+        </script>
+
+    </body>
+</html>
