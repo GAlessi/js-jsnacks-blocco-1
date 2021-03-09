@@ -4,8 +4,40 @@
         <meta charset="utf-8">
         <title>JSnacks</title>
 
+        <style media="screen">
+
+
+        .contenitore{
+            height: calc(100vh - 40px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #pari, #dispari{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        #pari{
+            color: red;
+        }
+
+        #dispari{
+            color: green;
+        }
+        </style>
     </head>
+
     <body>
+
+<!-- HTML ESERCIZIO 3 -->
+        <div class="contenitore">
+            <div id="pari">Pari:</div>
+            <div id="dispari">Dispari:</div>
+        </div>
+
+<!-- codice JavaScript -->
         <script type="text/javascript">
 
 // Generatore di "nomi cognomi" casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
@@ -52,6 +84,20 @@
                 somma = somma + numeroUtente;
             }
             console.log("Esercizio 3: ", "Numero limite: " + numeroMax,  arr, "totale: " + somma);
+
+// Crea due tag div con due id diversi. Un div avrà il testo colorato di rosso mentre l'altro di verde. Partendo da un array di numeri, stampiamo nell'id rosso i numeri dispari e in verde i numeri pari.
+            var numbers = [15, 20, 1, 3, 22, 55, 34, 25, 15, 33, 12, 22, 44, 66, 23, 88, 109, 110];
+            var idPari = document.getElementById("pari");
+            var idDispari = document.getElementById("dispari");
+
+            for (var i = 0; i < numbers.length; i++) {
+                if ( numbers[i] % 2 == 0 ) {
+                    idPari.innerHTML += (" " + numbers[i]);
+                }else {
+                    idDispari.innerHTML += (" " + numbers[i]);
+                }
+            }
+
         </script>
 
     </body>
