@@ -19,8 +19,28 @@
              fullnames.push(names[rndName] + " " + lastnames[rndLastname])
             }
 
-            console.log(fullnames);
+            console.log("Lista nomi e cognomi casuali:" + " " + fullnames);
 
+// Crea due array che hanno un numero di elementi diversi. Aggiungi elementi all'array che ha meno elementi fino a quando ne avrà tanti quanti l'altro.
+            var numbers1 = [ 1, 5, 18, 25 ];
+            var numbers2 = [ 15, 2, 7, 23, 65, 45, 3 ];
+            var lng1 = numbers1.length;
+            var lng2 = numbers2.length;
+            var short = numbers1;
+            var long = numbers2;
+            if (lng1 == lng2) {
+                console.log("Gli array hanno la stessa dimensione");
+            }else if (lng1 > lng2) {
+                short = numbers2;
+                long = numbers1;
+            }
+
+            var aggiungere = long.length - short.length;
+            for (var i = 0; i < aggiungere; i++) {
+                var numberRnd = Math.floor(Math.random() * 100) + 1;
+                short.push(numberRnd);
+            }
+            console.log(short, long);
         </script>
 
     </body>
