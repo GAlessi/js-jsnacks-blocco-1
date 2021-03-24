@@ -12,18 +12,23 @@ function es1() {
 }
 
 var arrEs2 = [
-    {'nome': 'Gabriele', 'cognome': 'Alessi'},
-    {'nome': 'Alessando', 'cognome': 'Venti'},
-    {'nome': 'Lorenzo', 'cognome': 'Antonelli'}
+    {'nome': 'Gabriele', 'cognome': 'Alessi', 'età': 20},
+    {'nome': 'Alessando', 'cognome': 'Venti', 'età': 20},
+    {'nome': 'Lorenzo', 'cognome': 'Antonelli', 'età': 20}
 ];
 
+// function es2() {
+//     for (var i = 0; i < arrEs2.length; i++) {
+//         var studente = arr[i];
+//         for (var key in studente) {
+//             var value = studente[key];
+//             console.log(key, value);
+//         }
+//     }
+// }
 function es2() {
-    for (var i = 0; i < arrEs2.length; i++) {
-        var studente = arr[i];
-        for (var key in studente) {
-            var value = studente[key];
-            console.log(key, value);
-        }
+    for (var key in arrEs2) {
+        console.log(arrEs2[key]['nome'] + ' ' + arrEs2[key]['cognome']);
     }
 }
 
@@ -45,8 +50,8 @@ function es3() {
 
 function init() {
     // es1();
-    // es2();
-    es3();
+    es2();
+    // es3();
 }
 
 
