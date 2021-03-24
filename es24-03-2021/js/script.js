@@ -11,7 +11,6 @@ function es1() {
 
 }
 
-
 var arrEs2 = [
     {'nome': 'Gabriele', 'cognome': 'Alessi'},
     {'nome': 'Alessando', 'cognome': 'Venti'},
@@ -33,9 +32,6 @@ var arrEs3 = [
     {'nome': 'Alessando', 'cognome': 'Venti', 'età': '28'},
     {'nome': 'Lorenzo', 'cognome': 'Antonelli', 'età': '30'}
 ];
-
-
-
 
 function es3() {
     var newStudent = {
