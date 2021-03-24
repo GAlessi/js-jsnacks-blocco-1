@@ -7,8 +7,7 @@ var student = {
 
 function es1() {
     for ( var key in student)
-        console.log(student[key]);
-
+        console.log("Esercizio 1: ", student[key]);
 }
 
 var arrEs2 = [
@@ -28,7 +27,7 @@ var arrEs2 = [
 // }
 function es2() {
     for (var key in arrEs2) {
-        console.log(arrEs2[key]['nome'] + ' ' + arrEs2[key]['cognome']);
+        console.log("Esercizio 2: ", arrEs2[key]['nome'] + ' ' + arrEs2[key]['cognome']);
     }
 }
 
@@ -45,13 +44,13 @@ function es3() {
         "età": prompt("età")
     }
     arrEs3.push(newStudent);
-    console.log(arrEs3);
+    console.log("Esercizio 3: ", arrEs3);
 }
 
 function init() {
-    // es1();
+    es1();
     es2();
-    // es3();
+    es3();
 }
 
 
