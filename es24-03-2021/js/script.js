@@ -11,20 +11,20 @@ function es1() {
 }
 
 
-function es2() {
-    var arrEs2 = [
-        {'nome': 'Gabriele', 'cognome': 'Alessi', 'età': 20},
-        {'nome': 'Alessando', 'cognome': 'Venti', 'età': 20},
-        {'nome': 'Lorenzo', 'cognome': 'Antonelli', 'età': 20}
-    ];
-    for (var i = 0; i < arrEs2.length; i++) {
-        var studente = arr[i];
-        for (var key in studente) {
-            var value = studente[key];
-            console.log(key, value);
-        }
-    }
-}
+// function es2() {
+//     var arrEs2 = [
+//         {'nome': 'Gabriele', 'cognome': 'Alessi', 'età': 20},
+//         {'nome': 'Alessando', 'cognome': 'Venti', 'età': 20},
+//         {'nome': 'Lorenzo', 'cognome': 'Antonelli', 'età': 20}
+//     ];
+//     for (var i = 0; i < arrEs2.length; i++) {
+//         var studente = arr[i];
+//         for (var key in studente) {
+//             var value = studente[key];
+//             console.log(key, value);
+//         }
+//     }
+// }
 function es2() {
     var arrEs2 = [
         {'nome': 'Gabriele', 'cognome': 'Alessi', 'età': 20},
