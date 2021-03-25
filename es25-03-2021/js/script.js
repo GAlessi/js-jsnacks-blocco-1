@@ -88,13 +88,8 @@ function fusion() {
     console.log('Array Fusion: ' + arrFusion);
 }
 
-function selArrPart(min, max, array) {
-//     Scrivi una funzione che accetti tre argomenti:
-// un array e due numeri ("a" più piccolo di "b" e "b" grande al
-// massimo quanto il numero di elementi dell'array).
-// La funzione ritornerà un nuovo array con i valori che
-// hanno la posizione compresa tra "a" e "b"
-console.log(min, max, array);
+
+function splitter(min, max, array) {
     var selectedArr = [];
     for (var i = min; i <= max; i++) {
         selectedArr.push(array[i]);
@@ -102,11 +97,27 @@ console.log(min, max, array);
     return(selectedArr);
 }
 
+function selArrPart() {
+//     Scrivi una funzione che accetti tre argomenti:
+// un array e due numeri ("a" più piccolo di "b" e "b" grande al
+// massimo quanto il numero di elementi dell'array).
+// La funzione ritornerà un nuovo array con i valori che
+// hanno la posizione compresa tra "a" e "b.
+var minimo = 3;
+var massimo = 6;
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+console.log('');
+console.log('esercizio 4:');
+console.log(splitter(minimo, massimo, arr));
+
+}
+
 function init() {
-    // zucchine();
-    // stringReverse();
-    // fusion();
-    console.log(selArrPart(3, 6, [1, 2, 3, 4, 5, 6, 7, 8, 9]));
+    zucchine();
+    stringReverse();
+    fusion();
+    selArrPart();
 }
 
 $(document).ready(init);
